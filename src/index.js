@@ -1,26 +1,11 @@
 import './style.css';
 
 const todoForm = document.querySelector('.todo-form');
+const todoInput = document.querySelector('.todo-input');
 const todoItemsList = document.querySelector('.todo-items');
 let todos = [];
 
-function renderTodos(todos) {
-  todoItemsList.innerHTML = '';
-  todos.forEach((item) => {
-    const checked = item.completed ? 'checked' : null;
-    const li = document.createElement('li');
-    li.setAttribute('class', 'item');
-    li.setAttribute('data-key', item.id);
-    if (item.completed === true) {
-      li.classList.add('checked');
-    }
-    li.innerHTML = `
-      <input type="checkbox" class="checkbox" ${checked}>
-      ${item.name}
-      <button class="delete-button">X</button>
-    `;
-    todoItemsList.append(li);
-  });
+function renderTodos() {
 }
 function addToLocalStorage(todos) {
   localStorage.setItem('todos', JSON.stringify(todos));
@@ -56,6 +41,19 @@ todoItemsList.addEventListener('click', (event) => {
   }
 });
 
+function addTodo(item) {
+  if (item !== '') {
+    const todo = {
+      id: Date.now(),
+      name: item,
+      completed: false,
+    };
+    todos.push(todo);
+    addToLocalStorage(todos);
+    todoInput.value = '';
+  }
+}
 todoForm.addEventListener('submit', (event) => {
   event.preventDefault();
+  addTodo(todoInput.value);
 });
