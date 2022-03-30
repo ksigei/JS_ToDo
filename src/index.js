@@ -1,25 +1,9 @@
 import './style.css';
 
 const todoForm = document.querySelector('.todo-form');
-const todoInput = document.querySelector('.todo-input');
 const todoItemsList = document.querySelector('.todo-items');
 let todos = [];
-todoForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  addTodo(todoInput.value);
-});
-function addTodo(item) {
-  if (item !== '') {
-    const todo = {
-      id: Date.now(),
-      name: item,
-      completed: false,
-    };
-    todos.push(todo);
-    addToLocalStorage(todos);
-    todoInput.value = '';
-  }
-}
+
 function renderTodos(todos) {
   todoItemsList.innerHTML = '';
   todos.forEach((item) => {
@@ -58,7 +42,7 @@ function toggle(id) {
   addToLocalStorage(todos);
 }
 function deleteTodo(id) {
-  todos = todos.filter((item) => item.id != id);
+  todos = todos.filter((item) => item.id !== id);
   addToLocalStorage(todos);
 }
 
@@ -70,4 +54,8 @@ todoItemsList.addEventListener('click', (event) => {
   if (event.target.classList.contains('delete-button')) {
     deleteTodo(event.target.parentElement.getAttribute('data-key'));
   }
+});
+
+todoForm.addEventListener('submit', (event) => {
+  event.preventDefault();
 });
