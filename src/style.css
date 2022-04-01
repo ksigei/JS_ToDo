@@ -1,93 +1,80 @@
 * {
+  padding: 0;
   margin: 0;
-  border: 0;
   box-sizing: border-box;
 }
 
-body {
-  background: #fff;
-  color: #000;
-  font-family: 'Montserrat', sans-serif;
-}
-
-header {
-  font-size: 1.5rem;
-}
-
-header,
-form {
-  min-height: 20vh;
+.to-do {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  right: 20%;
+  box-shadow: 4px 6px #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  background-color: #808080;
 }
 
-form input {
-  padding: 0.5rem;
-  width: 45%;
-  font-size: 2rem;
-  border: 2px solid #000;
-  background: white;
-}
-
-form button {
-  padding: 0.5rem;
-  font-size: 2rem;
-  border: 2px solid #000;
-  background: white;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-form button:hover {
-  background-color: #000;
-  color: white;
-}
-
-.todo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.todo-list {
-  min-width: 40%;
-  list-style: none;
-}
-
-.todo {
-  margin: 0.5rem;
-  background: white;
-  border: 2px solid #000;
-  color: black;
-  font-size: 1.5rem;
+.to-do .today {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #6e6a6a;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 15px 15px;
+  background-color: #fff;
 }
 
-.todo li {
-  flex: 1;
+.to-do .add-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #fff;
 }
 
-.check-btn,
-.delete-btn {
+.to-do .add-text input {
+  font-style: italic;
+  width: 90%;
+}
+
+.to-do .todos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.to-do .todo-item {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 15px 15px;
+}
+
+.to-do input[type=text] {
   border: none;
-  padding: 1rem;
-  cursor: pointer;
+  background-color: transparent;
   font-size: 1rem;
 }
 
-.check-btn {
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
+.to-do .todo-item input[type=text] {
+  flex-grow: 1;
 }
 
-.check {
-  text-decoration: line-through;
-  opacity: 0.5;
+.to-do .button {
+  display: flex;
+  justify-content: center;
+  background-color: #c7c3c3;
+  padding: 10px;
 }
 
-.todo-item {
-  padding: 0 0.5rem;
+.to-do .button button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: rgb(121, 116, 116);
+}
+
+.trash {
+  display: none;
 }
