@@ -15,17 +15,21 @@
       <h1>My Todo List</h1>
   </header>
 
-  <form>
-      <input type="text" class="todo-input">
-      <button class="add-todo-button">
-          <i class="fas fa-plus-square"></i>
-      </button>
-  </form>
-
-  <div class="todo-container">
-      <ul class="todo-list">
-          
-      </ul>
-  </div>
+  <main>
+    <div class="to-do">
+        <div class="today">
+            <h1>Today's To Do</h1><span><i class="fas fa-sync-alt"></i></span>
+        </div>
+        <form id="form-id" class="add-text">
+            <input type="text" placeholder="Add to your list"><span><i class="fas fa-level-down-alt fa-rotate-90"></i></span>
+        </form>
+        <div class="todos">
+           
+        </div>
+        <div class="button">
+            <button id="button">clear all completed</button>
+        </div>
+    </div>
+</main>
   </body>
 </html>
