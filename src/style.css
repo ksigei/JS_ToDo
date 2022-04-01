@@ -1,86 +1,80 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  font-family: sans-serif;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: #d9ddd6;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.container {
-  min-width: 700px;
+.to-do {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  right: 20%;
+  box-shadow: 4px 6px #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  gap: 4px;
+  background-color: #808080;
 }
 
-h1 {
-  color: #141414;
-  font-size: 3rem;
+.to-do .today {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #6e6a6a;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px;
+  background-color: #fff;
 }
 
-.todo-form {
-  margin: 40px 0;
+.to-do .add-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #fff;
 }
 
-.todo-input {
-  width: 250px;
-  border: 1px solid #9e9c9c;
-  outline: none;
-  padding: 10px;
-  margin-right: 10px;
+.to-do .add-text input {
+  font-style: italic;
+  width: 90%;
+}
+
+.to-do .todos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.to-do .todo-item {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 15px 15px;
+}
+
+.to-do input[type=text] {
+  border: none;
+  background-color: transparent;
   font-size: 1rem;
 }
 
-.add-button {
-  background-color: #f8f6f6;
-  color: #141414;
-  border: none;
-  outline: none;
-  padding: 7px;
-  font-size: 1.2rem;
+.to-do .todo-item input[type=text] {
+  flex-grow: 1;
 }
 
-.todo-items {
-  min-width: 350px;
-}
-
-.item {
-  border: 1px solid #9e9c9c;
-  background-color: #f8f6f6;
+.to-do .button {
+  display: flex;
+  justify-content: center;
+  background-color: #c7c3c3;
   padding: 10px;
-  font-size: 1.1rem;
 }
 
-.checkbox {
-  margin-right: 10px;
+.to-do .button button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: rgb(121, 116, 116);
 }
 
-.delete-button {
-  float: right;
-  background-color: #f8f6f6;
-  border: 1px solid #9e9c9c;
-  outline: none;
-  padding: 2px 5px;
-  margin-left: 10px;
-  font-size: 1.1rem;
-  font-weight: 550;
-}
-
-.checked {
-  text-decoration: line-through;
+.trash {
+  display: none;
 }

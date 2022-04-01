@@ -11,29 +11,25 @@
   <script defer src="main.js"></script></head>
 
   <body>
-    <div class="container">
-      <h1>To Do list</h1>
-      <form class="todo-form">
-        <input type="text" class="todo-input" placeholder="Add to your list..." />
-        <button type="submit" class="add-button">Add</button>
-      </form>
-      <ul class="todo-items">
-        <li class="item" data-key="1594003133171">
-          <input class="checkbox" type="checkbox">
-            Study JS
-          <button class="delete-button">X</button>
-        </li>
-        <li class="item" data-key="1594003133171">
-          <input class="checkbox" type="checkbox">
-            Study CSS
-          <button class="delete-button">X</button>
-        </li>
-        <li class="item" data-key="1594003133171">
-          <input class="checkbox" type="checkbox">
-            Watch football
-          <button class="delete-button">X</button>
-        </li>
-      </ul>
+    <header>
+      <h1>My Todo List</h1>
+  </header>
+
+  <main>
+    <div class="to-do">
+        <div class="today">
+            <h1>Today's To Do</h1><span><i class="fas fa-sync-alt"></i></span>
+        </div>
+        <form id="form-id" class="add-text">
+            <input type="text" placeholder="Add to your list"><span><i class="fas fa-level-down-alt fa-rotate-90"></i></span>
+        </form>
+        <div class="todos">
+           
+        </div>
+        <div class="button">
+            <button id="button">clear all completed</button>
+        </div>
     </div>
+</main>
   </body>
 </html>
