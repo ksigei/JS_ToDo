@@ -21,7 +21,7 @@
 
 **This is an documentation of Js To Do list**
 
-## Live Demo(Not yet working)
+## Live Demo
 
 [Live Demo Link](https://ksigei.github.io/JS_ToDo/)
 
