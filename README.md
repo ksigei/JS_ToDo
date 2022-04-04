@@ -10,7 +10,6 @@
 ![screenshot](./images/footer-scrn.png)
 ![screenshot](./images/footer-scrn.png) -->
 
-
 ## Built With
 
 - HTML
@@ -25,8 +24,6 @@
 
 [See live](https://ksigei.github.io/JS_ToDo/)
 
-
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -37,10 +34,10 @@ git clone https://github.com/ksigei/JS_ToDo.git
 
 cd JS_ToDo
 
-## Author
+## Connect me
 
 - GitHub: [@ksigei](https://github.com/ksigei)
-- Twitter: [@_kipronojaphet](https://twitter.com/@_kipronojaphet)
+- Twitter: [@\_kipronojaphet](https://twitter.com/@_kipronojaphet)
 - LinkedIn: [@kiprono-japhet](https://www.linkedin.com/in/kiprono-japhet-85aab1220)
 
 ## 🤝 Contributing
