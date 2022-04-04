@@ -23,7 +23,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://ksigei.github.io/JS_ToDo/)
+[See live](https://ksigei.github.io/JS_ToDo/)
 
 
 
