@@ -2,7 +2,7 @@
 
 # Project Name
 
-> To Do list
+> To Do list with javascript
 
 <!-- ![screenshot](./images/screenshot.png)
 ![screenshot](./images/screenshot1.png)
