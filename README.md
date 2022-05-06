@@ -2,14 +2,13 @@
 
 # Project Name
 
-> To Do list
+> To Do list with javascript
 
 <!-- ![screenshot](./images/screenshot.png)
 ![screenshot](./images/screenshot1.png)
 ![screenshot](./images/contact-scrn.png)
 ![screenshot](./images/footer-scrn.png)
 ![screenshot](./images/footer-scrn.png) -->
-
 
 ## Built With
 
@@ -23,9 +22,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://ksigei.github.io/JS_ToDo/)
-
-
+[See live](https://ksigei.github.io/JS_ToDo/)
 
 ## Getting Started
 
@@ -37,10 +34,10 @@ git clone https://github.com/ksigei/JS_ToDo.git
 
 cd JS_ToDo
 
-## Author
+## Connect me
 
 - GitHub: [@ksigei](https://github.com/ksigei)
-- Twitter: [@_kipronojaphet](https://twitter.com/@_kipronojaphet)
+- Twitter: [@\_kipronojaphet](https://twitter.com/@_kipronojaphet)
 - LinkedIn: [@kiprono-japhet](https://www.linkedin.com/in/kiprono-japhet-85aab1220)
 
 ## 🤝 Contributing
